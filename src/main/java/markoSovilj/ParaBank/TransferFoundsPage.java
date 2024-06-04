@@ -42,15 +42,4 @@ public class TransferFoundsPage extends AbstractComponents {
 		transferBtn.click();
 	}
 
-//	driver.findElement(By.id("amount")).sendKeys("50");
-//	
-//	driver.findElement(By.id("toAccountId")).click();
-//	driver.findElement(By.xpath("(//option[@value='"+ newAccNum +"'])[2]")).click();
-//	driver.findElement(By.cssSelector("input[type='submit']")).click();
-//	
-//	String waitPurpose = driver.findElement(By.xpath("//div[2]/p[1]")).getText();
-//	wait.until(ExpectedConditions.invisibilityOfElementWithText(By.xpath("//div[2]/p[1]"), waitPurpose));
-//	
-//	String transferMessage = driver.findElement(By.xpath("//div[2]/p[1]")).getText();
-//	System.out.println(transferMessage);
 }

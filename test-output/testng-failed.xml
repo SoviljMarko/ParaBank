@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ParaBankTests.RegistrationAndLogInTest">
+      <class name="ParaBankTests.TransferFoundsTest">
         <methods>
-          <include name="userRegistration"/>
+          <include name="NewTransferFound"/>
           <include name="finish"/>
-          <include name="userLogIn"/>
-          <include name="userLogInAndAccountOverview"/>
           <include name="begin"/>
         </methods>
-      </class> <!-- ParaBankTests.RegistrationAndLogInTest -->
+      </class> <!-- ParaBankTests.TransferFoundsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

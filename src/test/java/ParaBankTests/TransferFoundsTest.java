@@ -15,32 +15,45 @@ import AbstractComponents.AbstractComponents;
 import Resources.UserTestConstants;
 import TestComponents.BaseTest;
 import markoSovilj.ParaBank.AccountDetailsPage;
+import markoSovilj.ParaBank.AccountsOverviewPage;
 import markoSovilj.ParaBank.OpenNewAccountPage;
+import markoSovilj.ParaBank.TransferFoundsPage;
 
-public class NewAccountTest extends BaseTest{
+public class TransferFoundsTest extends BaseTest{
 	
 	WebDriver driver;
 	
 	@Test
-	public void NewAccount() {
+	public void NewTransferFound() {
 		AbstractComponents abstractComponents = new AbstractComponents(driver);
 		abstractComponents.CustomerLogIn(UserTestConstants.USER_USERNAME, UserTestConstants.USER_PASSWORD);
+		
+		AccountsOverviewPage accOverviewPage = new AccountsOverviewPage(driver);
+		String initialAccountNumber = accOverviewPage.getAccountNumber();
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
 		
 		OpenNewAccountPage newAccountPage = new OpenNewAccountPage(driver);
 		newAccountPage.addNewAccount();
 		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
 		String forWaitPurpose = driver.findElement(By.id("accountId")).getText();
 		wait.until(ExpectedConditions.invisibilityOfElementWithText(By.id("accountId"), forWaitPurpose));
 		
 		AccountDetailsPage accDetailsPage = new AccountDetailsPage(driver);
+		String newAccountNumber = accDetailsPage.getAccountId();
 		
-		System.out.println("New ACC Number: " + accDetailsPage.getAccountId());
-		System.out.println("New ACC Type: " + accDetailsPage.getAccountType());
-		System.out.println("New ACC Balance: " + accDetailsPage.getBalance());
-		System.out.println("New ACC Available Balance: " + accDetailsPage.getAvailableBalance());
+		TransferFoundsPage transferFoundsPage = new TransferFoundsPage(driver);
+		transferFoundsPage.fundsTransferBetweenAccounts(newAccountNumber);
 				
-		Assert.assertEquals(accDetailsPage.getAvailableBalance(), "100.00");
+		
+		String waitPurpose = driver.findElement(By.xpath("//div[2]/p[1]")).getText();
+		wait.until(ExpectedConditions.invisibilityOfElementWithText(By.xpath("//div[2]/p[1]"), waitPurpose));
+		
+		String transferMessage = driver.findElement(By.xpath("//div[2]/p[1]")).getText();
+		System.out.println(transferMessage);
+		
+		Assert.assertEquals(transferMessage, "$50.00 has been transferred from account #" + initialAccountNumber
+							+ " to account #" + newAccountNumber + ".");
 	}
 	
 	@BeforeMethod

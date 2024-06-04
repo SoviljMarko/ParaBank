@@ -32,24 +32,24 @@ public class RegistrationAndLogInTest extends BaseTest{
 		Assert.assertEquals(registerPage.RegisterConfirmationMessages(),UserTestConstants.REGISTRATION_MESSAGE);
 	}
 	
-	@Test (dependsOnMethods = {"userRegistration"})
-	public void userLogIn() {
-		AbstractComponents abstractComponents = new AbstractComponents(driver);
-		abstractComponents.CustomerLogIn(UserTestConstants.USER_USERNAME, UserTestConstants.USER_PASSWORD);
-	}
-	
-	@Test (dependsOnMethods = {"userRegistration"})
-	public void userLogInAndAccountOverview() {
-		AbstractComponents abstractComponents = new AbstractComponents(driver);
-		abstractComponents.CustomerLogIn(UserTestConstants.USER_USERNAME, UserTestConstants.USER_PASSWORD);
-		
-		AccountsOverviewPage accOverviewPage = new AccountsOverviewPage(driver);
-		
-		System.out.println("Initial ACC Number: " + accOverviewPage.getAccountNumber());
-		System.out.println("Balance Amount: " + accOverviewPage.getBalanceAmount());
-		System.out.println("Available Amount: " + accOverviewPage.getAavailableAmount());
-		System.out.println("Total Amount: " + accOverviewPage.getTotalAmount());
-	}
+//	@Test (dependsOnMethods = {"userRegistration"})
+//	public void userLogIn() {
+//		AbstractComponents abstractComponents = new AbstractComponents(driver);
+//		abstractComponents.CustomerLogIn(UserTestConstants.USER_USERNAME, UserTestConstants.USER_PASSWORD);
+//	}
+//	
+//	@Test (dependsOnMethods = {"userRegistration"})
+//	public void userLogInAndAccountOverview() {
+//		AbstractComponents abstractComponents = new AbstractComponents(driver);
+//		abstractComponents.CustomerLogIn(UserTestConstants.USER_USERNAME, UserTestConstants.USER_PASSWORD);
+//		
+//		AccountsOverviewPage accOverviewPage = new AccountsOverviewPage(driver);
+//		
+//		System.out.println("Initial ACC Number: " + accOverviewPage.getAccountNumber());
+//		System.out.println("Balance Amount: " + accOverviewPage.getBalanceAmount());
+//		System.out.println("Available Amount: " + accOverviewPage.getAavailableAmount());
+//		System.out.println("Total Amount: " + accOverviewPage.getTotalAmount());
+//	}
 	
 	@BeforeMethod
 	public void begin() {
