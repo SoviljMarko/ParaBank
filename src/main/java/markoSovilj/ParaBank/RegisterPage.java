@@ -5,11 +5,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import Resources.UserTestConstants;
 
 import AbstractComponents.AbstractComponents;
 
 public class RegisterPage extends AbstractComponents{
 	
+
 	WebDriver driver;
 	
 	public RegisterPage(WebDriver driver) {
@@ -66,17 +68,17 @@ public class RegisterPage extends AbstractComponents{
 
 		registerLnk.click();
 		
-		firstName.sendKeys("Marko");
-		lastName.sendKeys("Markovic");
-		adress.sendKeys("Njegoseva 5");
-		city.sendKeys("Pancevo");
-		state.sendKeys("Serbia");
-		zipCode.sendKeys("26000");
-		phoneNumber.sendKeys("+38166123123");
-		ssnNumber.sendKeys("987654321");
-		username.sendKeys("Marko85");
-		password.sendKeys("StarWars1");
-		repeatedPassword.sendKeys("StarWars1");
+		firstName.sendKeys(UserTestConstants.USER_FIRST_NAME);
+		lastName.sendKeys(UserTestConstants.USER_LAST_NAME);
+		adress.sendKeys(UserTestConstants.USER_STREET);
+		city.sendKeys(UserTestConstants.USER_CITY);
+		state.sendKeys(UserTestConstants.USER_STATE);
+		zipCode.sendKeys(UserTestConstants.USER_STATE);
+		phoneNumber.sendKeys(UserTestConstants.USER_PHONE_NUMBER);
+		ssnNumber.sendKeys(UserTestConstants.USER_SSN_NUMBER);
+		username.sendKeys(UserTestConstants.USER_USERNAME);
+		password.sendKeys(UserTestConstants.USER_PASSWORD);
+		repeatedPassword.sendKeys(UserTestConstants.USER_PASSWORD);
 		submitBtn.click();
 	}
 	
@@ -84,17 +86,17 @@ public class RegisterPage extends AbstractComponents{
 
 		registerLnk.click();
 		
-		firstName.sendKeys("Marko");
-		lastName.sendKeys("Markovic");
-		adress.sendKeys("Njegoseva 5");
-		city.sendKeys("Pancevo");
-		state.sendKeys("Serbia");
-		zipCode.sendKeys("26000");
-		phoneNumber.sendKeys("+38166123123");
-		ssnNumber.sendKeys("987654321");
-		username.sendKeys("Marko85");
-		password.sendKeys("StarWars1");
-		repeatedPassword.sendKeys("StarWars1");
+		firstName.sendKeys(UserTestConstants.USER_FIRST_NAME);
+		lastName.sendKeys(UserTestConstants.USER_LAST_NAME);
+		adress.sendKeys(UserTestConstants.USER_STREET);
+		city.sendKeys(UserTestConstants.USER_CITY);
+		state.sendKeys(UserTestConstants.USER_STATE);
+		zipCode.sendKeys(UserTestConstants.USER_STATE);
+		phoneNumber.sendKeys(UserTestConstants.USER_PHONE_NUMBER);
+		ssnNumber.sendKeys(UserTestConstants.USER_SSN_NUMBER);
+		username.sendKeys(UserTestConstants.USER_USERNAME);
+		password.sendKeys(UserTestConstants.USER_PASSWORD);
+		repeatedPassword.sendKeys(UserTestConstants.USER_PASSWORD);
 		submitBtn.click();
 		
 		logOutLnk.click();

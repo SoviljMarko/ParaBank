@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="ParaBankTests.RegistrationAndLogInTest" class="method navigator-link" hash-for-method="userLogIn">userLogIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ParaBankTests.RegistrationAndLogInTest" class="method navigator-link" hash-for-method="userLogInAndAccountOverview">userLogInAndAccountOverview</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,6 +143,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="userLogInAndAccountOverview">
+                  </a> <!-- userLogInAndAccountOverview -->
+                  <span class="method-name">userLogInAndAccountOverview</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="userRegistration">
                   </a> <!-- userRegistration -->
                   <span class="method-name">userRegistration</span>
@@ -148,7 +160,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/f1/nz1q_2417h3c9v6psycnnqq00000gn/T/testng-eclipse-644040347/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/f1/nz1q_2417h3c9v6psycnnqq00000gn/T/testng-eclipse-1625874491/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -197,20 +209,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'userLogIn')
+data.setCell(0, 1, 'userRegistration')
 data.setCell(0, 2, 'ParaBankTests.RegistrationAndLogInTest')
-data.setCell(0, 3, 4948);
+data.setCell(0, 3, 1524);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'userRegistration')
+data.setCell(1, 1, 'userLogInAndAccountOverview')
 data.setCell(1, 2, 'ParaBankTests.RegistrationAndLogInTest')
-data.setCell(1, 3, 4816);
+data.setCell(1, 3, 1165);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'userLogIn')
+data.setCell(2, 2, 'ParaBankTests.RegistrationAndLogInTest')
+data.setCell(2, 3, 822);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -237,14 +253,42 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">ParaBankTests.RegistrationAndLogInTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">begin</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">userRegistration</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">4662 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">finish</span>
+                <span class="method-start">6189 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">begin</span>
+                <span class="method-start">6317 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">userLogIn</span>
-                <span class="method-start">4824 ms</span>
+                <span class="method-start">10782 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">finish</span>
+                <span class="method-start">11605 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">begin</span>
+                <span class="method-start">11725 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">userLogInAndAccountOverview</span>
+                <span class="method-start">15261 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">finish</span>
+                <span class="method-start">16427 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

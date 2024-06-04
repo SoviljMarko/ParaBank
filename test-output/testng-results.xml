@@ -1,20 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-01T18:23:28 CEST" name="Default suite" finished-at="2024-06-01T18:23:38 CEST" duration-ms="9803">
+  <suite started-at="2024-06-04T15:27:16 CEST" name="Default suite" finished-at="2024-06-04T15:27:33 CEST" duration-ms="16579">
     <groups>
     </groups>
-    <test started-at="2024-06-01T18:23:28 CEST" name="Default test" finished-at="2024-06-01T18:23:38 CEST" duration-ms="9803">
+    <test started-at="2024-06-04T15:27:16 CEST" name="Default test" finished-at="2024-06-04T15:27:33 CEST" duration-ms="16579">
       <class name="ParaBankTests.RegistrationAndLogInTest">
-        <test-method signature="userRegistration()[pri:0, instance:ParaBankTests.RegistrationAndLogInTest@17046283]" started-at="2024-06-01T18:23:28 CEST" name="userRegistration" finished-at="2024-06-01T18:23:33 CEST" duration-ms="4816" status="PASS">
+        <test-method is-config="true" signature="begin()[pri:0, instance:ParaBankTests.RegistrationAndLogInTest@6a400542]" started-at="2024-06-04T15:27:17 CEST" name="begin" finished-at="2024-06-04T15:27:21 CEST" duration-ms="4661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="userRegistration()[pri:0, instance:ParaBankTests.RegistrationAndLogInTest@6a400542]" started-at="2024-06-04T15:27:21 CEST" name="userRegistration" finished-at="2024-06-04T15:27:23 CEST" duration-ms="1524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRegistration -->
-        <test-method signature="userLogIn()[pri:0, instance:ParaBankTests.RegistrationAndLogInTest@17046283]" started-at="2024-06-01T18:23:33 CEST" name="userLogIn" finished-at="2024-06-01T18:23:38 CEST" depends-on-methods="ParaBankTests.RegistrationAndLogInTest.userRegistration" duration-ms="4948" status="PASS">
+        <test-method is-config="true" signature="finish()[pri:0, instance:ParaBankTests.RegistrationAndLogInTest@6a400542]" started-at="2024-06-04T15:27:23 CEST" name="finish" finished-at="2024-06-04T15:27:23 CEST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:ParaBankTests.RegistrationAndLogInTest@6a400542]" started-at="2024-06-04T15:27:23 CEST" name="begin" finished-at="2024-06-04T15:27:27 CEST" duration-ms="4465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="userLogIn()[pri:0, instance:ParaBankTests.RegistrationAndLogInTest@6a400542]" started-at="2024-06-04T15:27:27 CEST" name="userLogIn" finished-at="2024-06-04T15:27:28 CEST" depends-on-methods="ParaBankTests.RegistrationAndLogInTest.userRegistration" duration-ms="822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLogIn -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:ParaBankTests.RegistrationAndLogInTest@6a400542]" started-at="2024-06-04T15:27:28 CEST" name="finish" finished-at="2024-06-04T15:27:28 CEST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method is-config="true" signature="begin()[pri:0, instance:ParaBankTests.RegistrationAndLogInTest@6a400542]" started-at="2024-06-04T15:27:28 CEST" name="begin" finished-at="2024-06-04T15:27:32 CEST" duration-ms="3536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- begin -->
+        <test-method signature="userLogInAndAccountOverview()[pri:0, instance:ParaBankTests.RegistrationAndLogInTest@6a400542]" started-at="2024-06-04T15:27:32 CEST" name="userLogInAndAccountOverview" finished-at="2024-06-04T15:27:33 CEST" depends-on-methods="ParaBankTests.RegistrationAndLogInTest.userRegistration" duration-ms="1165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogInAndAccountOverview -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:ParaBankTests.RegistrationAndLogInTest@6a400542]" started-at="2024-06-04T15:27:33 CEST" name="finish" finished-at="2024-06-04T15:27:33 CEST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
       </class> <!-- ParaBankTests.RegistrationAndLogInTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -6,7 +6,10 @@
       <class name="ParaBankTests.RegistrationAndLogInTest">
         <methods>
           <include name="userRegistration"/>
+          <include name="finish"/>
           <include name="userLogIn"/>
+          <include name="userLogInAndAccountOverview"/>
+          <include name="begin"/>
         </methods>
       </class> <!-- ParaBankTests.RegistrationAndLogInTest -->
     </classes>

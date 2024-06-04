@@ -47,15 +47,4 @@ public class AccountDetailsPage extends AbstractComponents {
 		return formatedAvailableBalance.replace("$", "");
 	}
 	
-//	String newAccNum = driver.findElement(By.id("accountId")).getText();
-//	System.out.println(newAccNum);
-//	
-//	String accType = driver.findElement(By.id("accountType")).getText();
-//	System.out.println(accType); 
-//	
-//	String rawAccBalance = driver.findElement(By.id("balance")).getText();
-//	System.out.println(rawAccBalance.replace("$", ""));
-//	
-//	String rawAccAvailable = driver.findElement(By.id("availableBalance")).getText();
-//	System.out.println(rawAccAvailable.replace("$", ""));
 }
